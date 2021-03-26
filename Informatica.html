@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Auditor</title>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/fontawesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+
+<body>
+   <div id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+               <h1>Auditoria</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="show-menu">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="Auditor.html">Auditor</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="Informatica.html">Informatica</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#Controles">Controles</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#Evidencias">Evidencias</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#Nicaragua">En Nicaragua</a>
+                  </li>
+                  <li class="nav-item .search-container">
+                     <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
+                     <form>
+                        <input type="search" placeholder="Search">
+                     </form>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+
+   <div id="wcs" class="hiw_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 text_align_center">
+               <h3>Marco de Referencia</h3>
+            </div>
+            <div class="col-md-5">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12 text_align_center">
+                  <img class="img-responsive" src="imgs/Marco de Referencia.jpg" alt="Marco de referencia">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+               <div class="footer_blog_section">
+                  <h1>Auditoria</h1>
+                  <p style="margin-top: 5px;">Una auditoría es el reflejo en su más puro estado de la contabilidad en
+                     una empresa.</p>
+               </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+               <div class="item">
+                  <h4 class="text-uppercase">Navegación</h4>
+                  <ul>
+                     <li><a href="Auditor.html">Auditor</a></li>
+                     <li><a href="Informatica.html">Informatica</a></li>
+                     <li><a href="#">Controles</a></li>
+                     <li><a href="#">Evidencias</a></li>
+                     <li><a href="#">En Nicaragua</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+               <div class="item">
+                  <h4 class="text-uppercase">Información de contacto</h4>
+                  <p><strong>Saul Miranda</strong></p>
+                  <p><img src="imgs/phone_icon.png" alt="#" />+505-7527-2268</p>
+                  <p><strong>UNI RUPAP</strong></p>
+                  <p><img src="imgs/location.png" alt="#" /> <strong>Carrera:</strong> Ingeniería de Sistemas</p>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+               <div class="item">
+                  <h4 class="text-uppercase">Descubrir</h4>
+                  <ul>
+                     <li><a href="#">Ayuda</a></li>
+                     <li><a href="#">Cómo funciona</a></li>
+                     <li><a href="#">Suscribir</a></li>
+                     <li><a href="#">Contactanos</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright text-center">
+         <p>Copyright 2021 Design by <a href="#">Saul Miranda</a></p>
+      </div>
+   </footer>
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script>
+      $(function () {
+
+         'use strict';
+
+         var winH = $(window).height();
+
+         $('header').height(winH);
+
+         $('header .container > div').css('top', (winH / 2) - ($('header .container > div').height() / 2));
+
+         $('.navbar ul li a.search').on('click', function (e) {
+            e.preventDefault();
+         });
+         $('.navbar a.search').on('click', function () {
+            $('.navbar form').fadeToggle();
+         });
+      })
+   </script>
+</body>
+
+</html>
