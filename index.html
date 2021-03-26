@@ -15,7 +15,7 @@
    <div id="header" class="header">
       <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
          <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                <h1>Auditoria</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu"
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="show-menu">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                     <a class="nav-link" href="#Auditor">Auditor</a>
+                     <a class="nav-link" href="Auditor.html">Auditor</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#Informatica">Informatica</a>
@@ -165,6 +165,7 @@
          </div>
       </div>
    </div>
+
    <div id="service" class="hiw_section layout_padding">
       <div class="container">
          <div class="row">
@@ -273,6 +274,7 @@
          </div>
       </div>
    </div>
+
    <div id="wcs" class="hiw_section layout_padding">
       <div class="container">
          <div class="row">
@@ -307,6 +309,7 @@
          </div>
       </div>
    </div>
+   
    <footer>
       <div class="container">
          <div class="row">
@@ -321,7 +324,7 @@
                <div class="item">
                   <h4 class="text-uppercase">Navegación</h4>
                   <ul>
-                     <li><a href="#">Auditor</a></li>
+                     <li><a href="Auditor.html">Auditor</a></li>
                      <li><a href="#">Informatica</a></li>
                      <li><a href="#">Controles</a></li>
                      <li><a href="#">Evidencias</a></li>
@@ -373,14 +376,6 @@
          });
          $('.navbar a.search').on('click', function () {
             $('.navbar form').fadeToggle();
-         });
-
-         $('.navbar ul.navbar-nav li a').on('click', function (e) {
-
-            var getAttr = $(this).attr('href');
-
-            e.preventDefault();
-            $('html').animate({ scrollTop: $(getAttr).offset().top }, 1000);
          });
       })
    </script>
