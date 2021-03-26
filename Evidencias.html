@@ -4,7 +4,7 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Informatica</title>
+   <title>Controles</title>
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/fontawesome.min.css">
@@ -52,18 +52,103 @@
       </nav>
    </div>
 
-   <div id="wcs" class="hiw_section layout_padding">
+   <!--CARUSEL-->
+   <div id="home" class="slider">
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#main_slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main_slider" data-slide-to="1"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img class="d-block w-100" src="imgs/controles2.jpg" alt="slider_img">
+               <div class="ovarlay_slide_cont">
+                  <h4>¿QUÉ SON LAS EVIDENCIAS?</h4>
+                  <p>La evidencia es la base de los juicios que serán emitidos en el informe de auditoría y que le
+                     permiten al auditor no tener dudas significativas en el proceso de evaluación de toda la
+                     información proporcionada por el cliente.
+                     La naturaleza de la auditoría consiste en: la obtención, documentación y evaluación.
+                  </p>
+                  <a class="blue_bt" href="#">Mas Información</a>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="imgs/controles1.jpg" alt="slider_img">
+               <div class="ovarlay_slide_cont">
+                  <h4>Desarrollo Legal</h4>
+                  <p>
+                     Consiste en que deben obtenerse la evidencia necesaria para poder emitir un juicio profesional,
+                     según las Normas Técnicas de Auditoría.
+                  </p>
+                  <a class="blue_bt" href="#">Mas Información</a>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <img src="imgs/left.png" alt="#" />
+         </a>
+         <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <img src="imgs/right.png" alt="#" />
+         </a>
+      </div>
+   </div>
+
+   <!--FASES DE LA AUDITORIA-->
+   <div id="contact" class="hiw_section layout_padding" style="background: #eeefef;">
       <div class="container">
          <div class="row">
-            <div class="col-md-12 text_align_center">
-               <h3>Marco de Referencia</h3>
+            <div class="col-md-7">
+               <h2>Clases de evidencias</h2>
             </div>
             <div class="col-md-5">
             </div>
          </div>
          <div class="row">
-            <div class="col-md-12 text_align_center">
-               <img class="img-responsive" src="imgs/Marco de Referencia.jpg" alt="Marco de referencia">
+            <div class="col-md-7">
+               <p>
+                  <br>
+                  Existe la evidencia documental y la no documental. La documental puede dividirse en tres categorías:
+                  <br>
+               <ul>
+                  <li>• Evidencia documental producida y mantenida por terceros.</li>
+                  <br>
+                  <li>• Evidencia documental producida por terceros y en poder de la empresa.</li>
+                  <br>
+                  <li>• Evidencia documental producida y mantenida por la sociedad.</li>
+                  <br>
+               </ul>
+               </p>
+            </div>
+            <div class="col-md-5 text_align_center">
+               <img class="img-responsive" src="imgs/tipos3.jpg" alt="#" />
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-5 text_align_center">
+               <img class="img-responsive" src="imgs/tipos1.jpg" alt="#" />
+            </div>
+
+            <div class="col-md-7">
+               <p>
+                  <br>
+                  Métodos para obtener evidencia
+                  <br>
+               <ul>
+                  <br>
+                  <li>•	Inspección</li>
+                  <br>
+                  <li>•	Observación</li>
+                  <br>
+                  <li>•	Preguntas</li>
+                  <br>
+                  <li>•	Confirmaciones</li>
+                  <br>
+                  <li>•	Cálculos</li>
+                  <br>
+                  <li>•	Técnicas de examen analítico</li>
+                  <br>
+               </ul>
+               </p>
             </div>
          </div>
       </div>
@@ -118,6 +203,7 @@
          <p>Copyright 2021 Design by <a href="#">Saul Miranda</a></p>
       </div>
    </footer>
+
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script>
